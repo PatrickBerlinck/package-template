@@ -1,27 +1,32 @@
-# package_name
+Grimaud Calculator
+Uma calculadora simples em Python, empacotada para PyPI, oferecendo operações básicas como adição, subtração, multiplicação e divisão.
 
-Description. 
-The package package_name is used to:
-	- 
-	-
+Instalação
+Você pode instalar a grimaud_calculator via pip:
 
-## Installation
+pip install grimaud_calculator
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+Uso
+Para usar a calculadora, você pode importá-la em seu script Python ou executá-la diretamente:
 
-```bash
-pip install package_name
-```
+Como módulo (importar e usar funções)
+from grimaud_calculator.operations import add, subtract, multiply, divide
 
-## Usage
+resultado_soma = add(10, 5)
+print(f"10 + 5 = {resultado_soma}")
 
-```python
-from package_name.module1_name import file1_name
-file1_name.my_function()
-```
+resultado_divisao = divide(20, 4)
+print(f"20 / 4 = {resultado_divisao}")
 
-## Author
-My_name
+Como aplicação interativa
+Você pode executar o módulo calculator diretamente se ele for o ponto de entrada principal do seu pacote:
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+python -m grimaud_calculator.calculator
+
+Isso iniciará o menu interativo da calculadora.
+
+Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests no repositório do GitHub.
+
+Licença
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
